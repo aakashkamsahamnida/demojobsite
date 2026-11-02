@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mogus Jobs | Login or Get Started</title><link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">M</span> Mogus <b>Jobs</b></a><nav><a class="active" href="index.html">Login / Get Started</a></nav></header>
+<main class="login-main">
+  <section class="login-intro">
+    <span class="eyebrow"><span class="dot"></span> WELCOME TO MOGUS JOBS</span>
+    <h1>Your next chapter<br>starts <em>here.</em></h1>
+    <p>Find opportunities that fit your future, or connect with talent for your company. Sign in or create an account to continue.</p>
+    <div class="login-illustration"><div class="login-orbit"></div><div class="login-star">✦</div><div class="login-mini-card"><span class="login-mini-icon">M</span><div><b>Make your next move</b><small>One opportunity at a time.</small></div><span class="login-check">✓</span></div></div>
+    <div class="secure-note"><span>▣</span> Sign in is required to access Mogus Jobs features.</div>
+  </section>
+  <section class="auth-section">
+    <div class="auth-card">
+      <div class="auth-tabs" role="tablist"><button type="button" class="auth-tab active" id="tab-login">Login</button><button type="button" class="auth-tab" id="tab-register">Get Started</button></div>
+      <div id="auth-login-panel">
+        <span class="eyebrow">WELCOME BACK</span><h2>Login to Mogus Jobs</h2><p class="auth-subtitle">Enter your phone number and password to continue.</p>
+        <form id="login-form">
+          <div class="field"><label for="login-phone">Phone number</label><input id="login-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Enter your phone number" required></div>
+          <div class="field"><label for="login-password">Password</label><input id="login-password" type="password" autocomplete="current-password" placeholder="Enter your password" required></div>
+          <p class="auth-error" id="login-error" aria-live="polite"></p>
+          <button class="btn auth-submit" type="submit">Login <span>→</span></button>
+        </form>
+        <p class="auth-switch-copy">New to Mogus Jobs? <button type="button" class="inline-link" id="switch-register">Get started</button></p>
+      </div>
+      <div id="auth-register-panel" class="hidden">
+        <span class="eyebrow">CREATE YOUR ACCOUNT</span><h2>Get started</h2><p class="auth-subtitle">Create an account and choose how you'll use Mogus Jobs.</p>
+        <form id="register-form">
+          <div class="field"><label for="register-name">Full name</label><input id="register-name" autocomplete="name" placeholder="Your full name" required></div>
+          <div class="field"><label for="register-phone">Phone number</label><input id="register-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Enter your phone number" required></div>
+          <div class="field"><label for="register-password">Create password</label><input id="register-password" type="password" autocomplete="new-password" minlength="6" placeholder="At least 6 characters" required></div>
+          <div class="field"><label for="register-role">I am joining as</label><select id="register-role" required><option value="">Choose account type</option><option value="applicant">Applicant / Job seeker</option><option value="recruiter">Recruiter / Company owner</option></select></div>
+          <p class="auth-error" id="register-error" aria-live="polite"></p>
+          <button class="btn auth-submit" type="submit">Create account <span>→</span></button>
+        </form>
+        <p class="auth-switch-copy">Already have an account? <button type="button" class="inline-link" id="switch-login">Login</button></p>
+      </div>
+      <div class="auth-demo-note"><span>ⓘ</span><p><b>Demo authentication:</b> this version stores demo account information in this browser. Real secure phone login and SMS OTP verification require the Java backend.</p></div>
+    </div>
+  </section>
+</main>
+<footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">M</span> Mogus <b>Jobs</b></a><span>Find your next opportunity.</span><span>© 2026 Mogus Jobs</span></footer>
+<script src="js/app.js"></script></body></html>
