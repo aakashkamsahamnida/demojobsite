@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mogus Jobs — find work and hire great people.">
+  <title>Mogus Jobs | Find work. Build your future.</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Mogus Jobs home"><span class="brand-mark">M</span><span>Mogus<span class="brand-light">Jobs</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#jobs">Find jobs</a><a href="#post-job">Post a job</a><a href="#history">Posting history</a>
+    </nav>
+    <div class="header-actions"><button class="btn btn-ghost" data-open-auth="login">Log in</button><button class="btn btn-primary" data-open-auth="register">Get started</button></div>
+    <button class="mobile-menu" id="mobile-menu" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Find work that<br><span>moves you forward.</span></h1>
+        <p class="hero-text">Discover opportunities that fit your ambitions, or meet the people who will help your company grow.</p>
+        <div class="hero-actions"><a class="btn btn-primary btn-large" href="#jobs">Explore jobs <span>↗</span></a><a class="btn btn-outline btn-large" href="#post-job">I'm hiring</a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>A</span><span>R</span><span>S</span><span>+</span></div><p><strong>Start your next chapter</strong><br><small>A simpler way to connect talent and opportunity.</small></p></div>
+      </div>
+      <div class="hero-art" aria-label="Career discovery illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card card-main"><div class="mini-top"><span class="mini-logo">m</span><span class="status-pill">● Hiring now</span></div><div class="mini-kicker">YOUR NEXT OPPORTUNITY</div><h3>Product Designer</h3><p class="muted">Northstar Studio · Hyderabad</p><div class="mini-tags"><span>Full-time</span><span>Hybrid</span></div><div class="mini-bottom"><div class="company-avatar">N</div><div><strong>Northstar Studio</strong><small>Designing what’s next</small></div><span class="save-icon">♡</span></div></div>
+        <div class="floating-note note-top"><span class="note-icon green">✓</span><div><strong>Great match!</strong><small>New opportunities await</small></div></div>
+        <div class="floating-note note-bottom"><span class="note-icon purple">↗</span><div><strong>Grow your career</strong><small>One step at a time</small></div></div>
+        <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✦</div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div><strong>01</strong><span>Find your next role</span></div><div><strong>02</strong><span>Meet great companies</span></div><div><strong>03</strong><span>Build what’s next</span></div>
+    </section>
+
+    <section class="section roles-section">
+      <div class="section-heading"><div><div class="eyebrow">MADE FOR BOTH SIDES</div><h2>One place. Two possibilities.</h2></div><p>Whether you're searching for a role or building a team, your next step starts here.</p></div>
+      <div class="role-grid">
+        <article class="role-card applicant-card"><div class="role-icon">⌕</div><div class="role-label">FOR JOB SEEKERS</div><h3>Your next role is out there.</h3><p>Explore opportunities, narrow your search, and find work that fits your life.</p><a href="#jobs" class="text-link">Explore opportunities <span>→</span></a></article>
+        <article class="role-card recruiter-card"><div class="role-icon">↗</div><div class="role-label">FOR RECRUITERS</div><h3>Meet your next great hire.</h3><p>Share an opening, reach potential candidates, and keep your hiring organized.</p><a href="#post-job" class="text-link">Post an opening <span>→</span></a></article>
+      </div>
+    </section>
+
+    <section class="section jobs-section" id="jobs">
+      <div class="section-heading"><div><div class="eyebrow">OPPORTUNITIES, DISCOVERED</div><h2>Find a role worth getting up for.</h2></div><span class="results-total" id="results-total">Loading jobs…</span></div>
+      <form id="job-search-form" class="search-panel">
+        <label class="search-field"><span>⌕</span><span class="sr-only">Job title or keyword</span><input id="search-keyword" type="search" placeholder="Job title, skill, or company"></label>
+        <label class="search-field"><span>⌖</span><span class="sr-only">Location</span><input id="search-location" type="search" placeholder="City or remote"></label>
+        <button class="btn btn-primary" type="submit">Search jobs <span>→</span></button>
+      </form>
+      <div class="jobs-layout">
+        <aside class="filter-panel">
+          <div class="filter-heading"><h3>Filters</h3><button type="button" id="clear-filters" class="text-button">Clear all</button></div>
+          <label class="filter-label" for="filter-type">Employment type</label><select id="filter-type"><option value="">All types</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option></select>
+          <label class="filter-label" for="filter-work">Work arrangement</label><select id="filter-work"><option value="">Any arrangement</option><option>Remote</option><option>Hybrid</option><option>On-site</option></select>
+          <label class="filter-label" for="filter-level">Experience level</label><select id="filter-level"><option value="">Any level</option><option>Entry level</option><option>Mid level</option><option>Senior</option><option>Internship</option></select>
+          <label class="filter-label" for="filter-salary">Minimum salary (annual)</label><select id="filter-salary"><option value="0">Any salary</option><option value="500000">₹5 lakh</option><option value="1000000">₹10 lakh</option><option value="1500000">₹15 lakh</option><option value="2000000">₹20 lakh</option></select>
+          <div class="filter-note"><span>✦</span><p><strong>Keep exploring</strong><br>New roles are added as companies post openings.</p></div>
+        </aside>
+        <div class="job-results"><div class="job-results-top"><span id="results-caption">Latest opportunities</span><label>Sort by <select id="sort-jobs"><option value="newest">Newest</option><option value="salary">Salary: high to low</option><option value="company">Company A–Z</option></select></label></div><div id="job-list" class="job-list"></div><div id="empty-state" class="empty-state hidden"><div>⌕</div><h3>No jobs found</h3><p>Try another keyword or remove a filter.</p><button class="btn btn-outline" id="reset-search" type="button">Reset search</button></div></div>
+      </div>
+    </section>
+
+    <section class="section recruiter-section" id="post-job">
+      <div class="recruiter-intro"><div class="eyebrow">FOR TEAMS THAT ARE GROWING</div><h2>Great people make<br><span>great things happen.</span></h2><p>Publish your opening on Mogus Jobs and keep every role organized in one place.</p><div class="recruiter-points"><span>✓ Simple job posting</span><span>✓ Manage your own listings</span><span>✓ Track posting history</span></div></div>
+      <form id="post-job-form" class="post-form">
+        <div class="form-header"><div><span class="form-step">RECRUITER WORKSPACE</span><h3>Post a new job</h3><p>Fields marked * are required.</p></div><div class="form-icon">↗</div></div>
+        <div class="form-grid">
+          <label class="form-field span-2">Job title *<input name="title" required maxlength="100" placeholder="e.g. Java Backend Developer"></label>
+          <label class="form-field">Company name *<input name="company" required maxlength="100" placeholder="Your company"></label>
+          <label class="form-field">Location *<input name="location" required maxlength="100" placeholder="e.g. Hyderabad or Remote"></label>
+          <label class="form-field">Employment type *<select name="type" required><option value="">Choose type</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option></select></label>
+          <label class="form-field">Work arrangement *<select name="workMode" required><option value="">Choose arrangement</option><option>Remote</option><option>Hybrid</option><option>On-site</option></select></label>
+          <label class="form-field">Experience level *<select name="level" required><option value="">Choose level</option><option>Entry level</option><option>Mid level</option><option>Senior</option><option>Internship</option></select></label>
+          <label class="form-field">Annual salary (₹)<input name="salary" type="number" min="0" step="10000" placeholder="e.g. 1200000"></label>
+          <label class="form-field span-2">Skills / keywords<input name="skills" maxlength="180" placeholder="Java, Spring Boot, SQL"></label>
+          <label class="form-field span-2">Job description *<textarea name="description" required rows="4" maxlength="5000" placeholder="Describe the role, responsibilities, and ideal candidate..."></textarea></label>
+        </div>
+        <div class="form-footer"><p>By publishing, you confirm these job details are accurate.</p><button class="btn btn-primary" type="submit">Publish job <span>↗</span></button></div>
+        <p id="post-message" class="form-message" role="status"></p>
+      </form>
+    </section>
+
+    <section class="section history-section" id="history">
+      <div class="section-heading"><div><div class="eyebrow">YOUR RECRUITER WORKSPACE</div><h2>Every opening, in one place.</h2></div><p>Review and manage jobs published from this browser.</p></div>
+      <div class="history-toolbar"><div><strong id="history-count">0 postings</strong><span> · Stored locally in this demo</span></div><button class="btn btn-outline" id="export-jobs" type="button">Export JSON ↓</button></div>
+      <div id="history-list" class="history-list"></div>
+      <div id="history-empty" class="history-empty"><div class="history-empty-icon">▤</div><h3>Your posting history will appear here</h3><p>Publish a job above to see it in this list.</p><a href="#post-job" class="text-link">Create your first posting →</a></div>
+    </section>
+
+    <section class="cta-section"><div><div class="eyebrow">YOUR NEXT MOVE</div><h2>Make room for what’s next.</h2><p>Find a role. Find your people. Start with Mogus Jobs.</p></div><div class="cta-actions"><a class="btn btn-white" href="#jobs">Find a job →</a><a class="btn btn-dark-outline" href="#post-job">Post a job ↗</a></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">M</span><span>Mogus<span class="brand-light">Jobs</span></span></a><p>Better connections. Brighter careers.</p><div><a href="#jobs">Find jobs</a><a href="#post-job">For recruiters</a><a href="#history">Posting history</a></div><small>© <span id="year"></span> Mogus Jobs. Demo project.</small></footer>
+
+  <div class="modal-backdrop hidden" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <div class="auth-modal"><button class="modal-close" id="close-auth" aria-label="Close">×</button><a class="brand modal-brand" href="#home"><span class="brand-mark">M</span><span>Mogus<span class="brand-light">Jobs</span></span></a>
+      <div class="auth-tabs"><button type="button" class="auth-tab active" data-auth-tab="login">Log in</button><button type="button" class="auth-tab" data-auth-tab="register">Create account</button></div>
+      <h2 id="auth-title">Welcome back.</h2><p class="auth-subtitle">Choose how you want to use Mogus Jobs.</p>
+      <form id="auth-form">
+        <label class="form-field">I am a <select id="auth-role"><option value="applicant">Applicant / Job seeker</option><option value="recruiter">Company owner / Recruiter</option></select></label>
+        <label class="form-field">Email address<input id="auth-email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label class="form-field" id="password-wrap">Password<input id="auth-password" type="password" minlength="6" autocomplete="current-password" placeholder="At least 6 characters"></label>
+        <div class="auth-divider"><span>OR</span></div>
+        <label class="form-field">Phone number (demo OTP)<input id="auth-phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel"></label>
+        <div class="form-field otp-row hidden" id="otp-wrap"><label for="auth-otp">Demo OTP</label><div><input id="auth-otp" inputmode="numeric" maxlength="6" placeholder="Enter 6-digit OTP"><button type="button" class="btn btn-outline" id="send-otp">Get OTP</button></div><small>Demo only: the OTP is shown on screen; no SMS is sent.</small></div>
+        <div class="auth-actions"><button class="btn btn-primary btn-full" type="submit" id="auth-submit">Log in</button><button class="btn btn-outline btn-full" type="button" id="otp-mode">Continue with OTP</button></div>
+        <p id="auth-message" class="form-message" role="status"></p>
+      </form>
+      <p class="auth-disclaimer">This static demo stores demo account details in your browser only. Do not use a real password or sensitive information.</p>
+    </div>
+  </div>
+  <div class="toast hidden" id="toast" role="status"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
