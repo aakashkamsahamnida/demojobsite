@@ -1,4 +1,10 @@
-
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Recruiter Workspace | Mogus Jobs</title><link rel="stylesheet" href="css/styles.css"></head>
+<body><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">M</span> Mogus <b>Jobs</b></a><nav><a href="index.html">Home</a><a href="jobs.html">Find Jobs</a><a class="active" href="recruiter.html">Recruiter</a></nav><a class="btn btn-small" href="#posting-form">+ Post a job</a></header>
+<main class="page-main recruiter-main"><div class="page-heading"><span class="eyebrow">RECRUITER WORKSPACE</span><h1>Find your next <em>great hire.</em></h1><p>Create job listings and manage the roles you’ve posted from one place.</p></div>
+<div class="workspace-grid"><section class="form-card" id="posting-form"><div class="card-heading"><span class="section-icon">＋</span><div><h2 id="form-title">Post a new job</h2><p>Fields marked * are required.</p></div></div><form id="job-form"><input type="hidden" id="edit-id"><div class="form-grid"><div class="field full"><label for="title">Job title *</label><input id="title" required placeholder="e.g. Java Backend Developer"></div><div class="field"><label for="company">Company name *</label><input id="company" required placeholder="Your company"></div><div class="field"><label for="location">Location *</label><input id="location" required placeholder="e.g. Hyderabad / Remote"></div><div class="field"><label for="type">Job type *</label><select id="type" required><option value="">Choose job type</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option></select></div><div class="field"><label for="work">Work mode *</label><select id="work" required><option value="">Choose work mode</option><option>On-site</option><option>Hybrid</option><option>Remote</option></select></div><div class="field"><label for="experience">Experience</label><select id="experience"><option value="">Not specified</option><option>Fresher</option><option>1–3 years</option><option>3–5 years</option><option>5+ years</option></select></div><div class="field"><label for="salary">Salary range</label><input id="salary" placeholder="e.g. ₹6–10 LPA"></div><div class="field full"><label for="description">Job description *</label><textarea id="description" required rows="4" placeholder="Describe the role, responsibilities, and skills..."></textarea></div></div><div class="form-actions"><button class="btn" type="submit" id="publish-btn">Publish job <span>→</span></button><button class="btn btn-light hidden" type="button" id="cancel-edit">Cancel edit</button></div><p class="form-message" id="form-message" aria-live="polite"></p></form></section>
+<aside class="manage-card"><div class="card-heading"><span class="section-icon">▤</span><div><h2>Your posting history</h2><p>Manage jobs saved in this browser.</p></div></div><div class="stats-row"><div><strong id="total-jobs">0</strong><span>Total listings</span></div><div><strong id="active-jobs">0</strong><span>Published</span></div></div><div id="posting-list" class="posting-list"><div class="small-empty"><span>▤</span><b>No postings yet</b><p>Your jobs will appear here after you publish them.</p></div></div><div class="data-actions"><button class="btn btn-light btn-small" id="export-json">Export JSON backup</button><label class="btn btn-light btn-small import-label" for="import-json">Import backup</label><input class="hidden" type="file" id="import-json" accept=".json,application/json"></div><p class="storage-note">Note: listings are currently stored in this browser only. They are not yet shared across users.</p></aside></div></main>
+<footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">M</span> Mogus <b>Jobs</b></a><span>Find your next opportunity.</span><span>© 2026 Mogus Jobs</span></footer><script src="js/app.js"></script></body></html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +25,6 @@
     </div>
   </nav>
 </header>
-
 <main>
   <section class="page-hero">
     <div class="container">
@@ -28,7 +33,6 @@
       <p>Create and manage your job listings from one place.</p>
     </div>
   </section>
-
   <section class="container dashboard-section">
     <div class="dashboard-heading">
       <div>
@@ -37,7 +41,6 @@
       </div>
       <span class="status-pill">Recruiter workspace</span>
     </div>
-
     <div class="stats-grid">
       <article class="stat-card">
         <span>Total job listings</span>
@@ -48,7 +51,6 @@
         <strong id="active-jobs">0</strong>
       </article>
     </div>
-
     <div class="dashboard-grid">
       <section class="form-panel" id="posting-form">
         <div class="panel-heading">
@@ -56,19 +58,14 @@
           <h2 id="form-title">Post a new job</h2>
           <p>Enter the details below to publish a job listing.</p>
         </div>
-
         <form id="job-form">
           <input type="hidden" id="edit-id">
-
           <label for="title">Job title</label>
           <input id="title" name="title" type="text" placeholder="e.g. Frontend Developer" required>
-
           <label for="company">Company name</label>
           <input id="company" name="company" type="text" placeholder="Your company" required>
-
           <label for="location">Location</label>
           <input id="location" name="location" type="text" placeholder="e.g. Hyderabad" required>
-
           <div class="form-two-columns">
             <div>
               <label for="type">Job type</label>
@@ -88,7 +85,6 @@
               </select>
             </div>
           </div>
-
           <label for="experience">Experience required</label>
           <select id="experience" name="experience" required>
             <option value="Fresher">Fresher</option>
@@ -96,13 +92,10 @@
             <option value="2-5 years">2–5 years</option>
             <option value="5+ years">5+ years</option>
           </select>
-
           <label for="salary">Salary</label>
           <input id="salary" name="salary" type="text" placeholder="e.g. ₹4–6 LPA">
-
           <label for="description">Job description</label>
           <textarea id="description" name="description" rows="5" placeholder="Describe the role and responsibilities..." required></textarea>
-
           <p id="form-message" class="form-message"></p>
           <div class="form-actions">
             <button id="publish-btn" class="btn btn-primary" type="submit">Publish job</button>
@@ -110,7 +103,6 @@
           </div>
         </form>
       </section>
-
       <section class="listings-panel">
         <div class="panel-heading">
           <span class="eyebrow">YOUR POSTS</span>
@@ -132,7 +124,6 @@
     </div>
   </section>
 </main>
-
 <footer class="site-footer">
   <div class="container footer-inner">
     <a class="brand brand-footer" href="index.html">Mogus<span>Jobs</span></a>
